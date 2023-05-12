@@ -12,6 +12,7 @@ POSTMAN_COLLECTION_PATH = str(sys.argv[1]).replace('\u200b', '')
 print(POSTMAN_COLLECTION_PATH)
 OUTPUT_FOLDER = "./output/"
 
+
 POSTMAN_COLLECTION = None
 
 
@@ -35,7 +36,7 @@ def mkdir(path):
     if not os.path.exists(path):
         os.makedirs(path)
 
-
+mkdir(OUTPUT_FOLDER)
 
 
 def parsePostmanCollection(collection,basePath):
